@@ -7,7 +7,7 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 224;
+  --hue-color: 190;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
@@ -49,6 +49,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  
 }
 
 h1, h2, p {
@@ -216,11 +217,11 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: var(--first-color);
 }
 
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: var(--second-color);
 }
 
 .home__img {
@@ -368,6 +369,12 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+}
+
+textarea::placeholder {
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
 }
 
 .contact__button {
